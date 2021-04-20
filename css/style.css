@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
 .logo {
     width: 250px;
     height: 100px;
@@ -97,6 +107,66 @@
     color: beige;
 }
 
+.lassi {
+    width: 113px;
+    position: absolute;
+    left: 16%;
+    top: -45%;
+    z-index: -1;
+}
+
+
+/* about us mobile version */
+
+@media only screen and (max-width: 600px) {
+
+    .home__title {
+        text-align: center;
+        margin-top: 125px;
+        margin-left: 0;
+
+        font-size: 42px;
+        color: #0b6e45;
+    }
+
+    .home__subtitle {
+        text-align: center;
+        margin-left: 0px;
+        font-size: 35px;
+    }
+
+    .button1 {
+
+        display: inline-block;
+        background-color: #0b6e45;
+        color: #FFF;
+        padding: 0px;
+        border-radius: .5rem;
+        transition: .3s;
+        margin-left: 0px;
+        text-decoration: none;
+        margin-top: 21px;
+
+
+    }
+
+    .col-md-12.cn {
+        text-align: center;
+    }
+
+    .lassi {
+        width: 33%;
+        position: absolute;
+        left: 33%;
+        top: -45%;
+        z-index: -1;
+    }
+
+
+
+}
+
+
 
 
 @keyframes rotation {
@@ -106,6 +176,9 @@
     }
 }
 
+
+
+/* home img  */
 .home__img {
     margin-top: 50px;
     margin-bottom: 100px;
@@ -121,6 +194,80 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+
+    .home__img {
+        margin-top: 110px;
+        margin-bottom: 100px;
+        border-style: dashed;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        padding: 20px;
+        animation: rotation 15s linear infinite;
+
+
+    }
+
+    .sec-2 {
+        width: 70%;
+    }
+
+    .title h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 28px !important;
+        color: #303e4c;
+        line-height: 40px;
+        margin-bottom: 25px;
+        margin-top: 50px;
+    }
+
+    .subtitle h4 {
+        font-size: 22px !important;
+    }
+
+    .section {
+        width: 100%;
+        position: relative;
+        padding: 30px 0;
+        height: 100%;
+
+    }
+
+
+
+    .menu-item-img {
+        margin-bottom: 4em;
+    }
+
+    .glass {
+        left: 18% !important;
+    }
+
+    .wrapper {
+        display: flex;
+        margin-top: 50px !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-map {
+        margin-top: 20px;
+    }
+
+    .brder {
+        border: none !important;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -133,59 +280,188 @@
     }
 }
 
+
+
+
+
+
+/*     around salad components   */
+
 .tomato img {
-    width: 100px;
-    position: absolute;
-    top: 230px;
-    right: 570px;
-    animation: bounce infinite;
-    animation-duration: 1.5s;
+    width: 5.5em;
 }
 
 .brocolli img {
-    width: 130px;
-    position: absolute;
-    top: 220px;
-    right: 75px;
-    animation: bounce infinite;
-    animation-duration: 1.5s;
+    width: 6.5em;
 }
 
 .chilly img {
-    width: 70px;
-    position: absolute;
-    top: 80px;
-    right: 350px;
-    animation: bounce infinite;
-    animation-duration: 1.5s;
-}
-
-.melon img {
-    width: 80px;
-    position: absolute;
-    top: 450px;
-    right: 584px;
-    animation: bounce infinite;
-    animation-duration: 1.5s;
-}
-
-.matka-top img {
-    width: 80px;
-    position: absolute;
-    top: 637px;
-    right: 335px;
-    animation: bounce infinite;
-    animation-duration: 1.5s;
+    width: 3.5em;
 }
 
 .matka-bottom img {
-    width: 80px;
+    width: 5em;
+}
+
+.matka-top img {
+    width: 5em;
+}
+
+.melon img {
+    width: 5em;
+}
+
+.tomato {
+
     position: absolute;
-    top: 450px;
-    right: 75px;
+    top: 21%;
+    left: -4%;
     animation: bounce infinite;
     animation-duration: 1.5s;
 }
+
+
+
+.brocolli {
+
+    position: absolute;
+    top: 21%;
+    right: -5%;
+    animation: bounce infinite;
+    animation-duration: 1.5s;
+}
+
+.chilly {
+
+    position: absolute;
+    top: -3%;
+    left: 43%;
+    animation: bounce infinite;
+    animation-duration: 1.5s;
+}
+
+.melon {
+
+    position: absolute;
+    bottom: 29%;
+    left: -2%;
+    animation: bounce infinite;
+    animation-duration: 1.5s;
+}
+
+.matka-top {
+
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+    animation: bounce infinite;
+    animation-duration: 1.5s;
+}
+
+.matka-bottom {
+
+    position: absolute;
+    bottom: 28%;
+    right: -3%;
+    animation: bounce infinite;
+    animation-duration: 1.5s;
+}
+
+/* around salad components  end */
+
+
+
+
+/* around salad components   media query */
+
+@media only screen and (max-width: 600px) {
+    .tomato img {
+        width: 4em;
+    }
+
+    .brocolli img {
+        width: 5em;
+    }
+
+    .chilly img {
+        width: 3em;
+    }
+
+    .matka-bottom img {
+        width: 3.5em;
+    }
+
+    .matka-top img {
+        width: 3.5em;
+    }
+
+    .melon img {
+        width: 3.5em;
+    }
+
+    .tomato {
+
+        position: absolute;
+        top: 29%;
+        left: 0%;
+        animation: bounce infinite;
+        animation-duration: 1.5s;
+    }
+
+
+
+    .brocolli {
+
+        position: absolute;
+        top: 27%;
+        right: -4%;
+        animation: bounce infinite;
+        animation-duration: 1.5s;
+    }
+
+    .chilly {
+
+        position: absolute;
+        top: 9%;
+        left: 43%;
+        animation: bounce infinite;
+        animation-duration: 1.5s;
+    }
+
+    .melon {
+
+        position: absolute;
+        bottom: 29%;
+        left: 3%;
+        animation: bounce infinite;
+        animation-duration: 1.5s;
+    }
+
+    .matka-top {
+
+        position: absolute;
+        bottom: 12%;
+        left: 45%;
+        animation: bounce infinite;
+        animation-duration: 1.5s;
+    }
+
+    .matka-bottom {
+
+        position: absolute;
+        bottom: 28%;
+        right: 1%;
+        animation: bounce infinite;
+        animation-duration: 1.5s;
+    }
+
+
+}
+
+/* around salad components  media query end */
+
+
+
 
 @keyframes bounce {
     100% {
@@ -384,17 +660,9 @@
     position: relative;
 }
 
-.lassi {
-    width: 113px;
-    position: absolute;
-    left: 16%;
-    top: -45%;
-    z-index: -1;
-}
 
-.contact {
-    height: 80vh;
-}
+
+
 
 .footer {
     height: 70vh;
